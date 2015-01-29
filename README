@@ -1,0 +1,50 @@
+NAME
+    RT::Extension::AnnounceSimple - Display simple announcement as a banner
+    on RT pages.
+
+DESCRIPTION
+    This plugin displays a simple announcement as a banner on RT pages.
+
+    An RT Admin can set the announce text under Admin > Tools > Announce.
+
+    If you want more than a simple text then have a look at
+    RT::Extension::Announce
+    <https://metacpan.org/pod/RT::Extension::Announce>.
+
+INSTALLATION
+    perl Makefile.PL
+    make
+    make install
+        May need root permissions
+
+    Edit your /opt/rt4/etc/RT_SiteConfig.pm
+        If you are using RT 4.2 or greater, add this line:
+
+            Plugin('RT::Extension::AnnounceSimple');
+
+        For RT 4.0, add this line:
+
+            Set(@Plugins, qw(RT::Extension::AnnounceSimple));
+
+        or add RT::Extension::AnnounceSimple to your existing @Plugins line.
+
+    Clear your mason cache
+            rm -rf /opt/rt4/var/mason_data/obj
+
+    Restart your webserver
+
+AUTHOR
+    Christian Loos <cloos@netsandbox.de>
+
+LICENSE AND COPYRIGHT
+    This software is Copyright (C) 2015, Christian Loos.
+
+    This is free software, licensed under:
+
+      The GNU General Public License, Version 2, June 1991
+
+SEE ALSO
+    <http://bestpractical.com/rt/>
+    RT::Extension::Announce
+    <https://metacpan.org/pod/RT::Extension::Announce>
+
