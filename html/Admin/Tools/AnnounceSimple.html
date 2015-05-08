@@ -1,8 +1,9 @@
-<& /Admin/Elements/Header, Title => loc("AnnounceSimple") &>
+<& /Admin/Elements/Header, Title => $title &>
 <& /Elements/Tabs &>
 <& /Elements/ListActions, actions => \@results &>
 
 <form method="post" enctype="multipart/form-data" action="<% RT->Config->Get('WebPath') %>/Admin/Tools/AnnounceSimple.html">
+<input type="hidden" class="hidden" name="Queue" value="<% $Queue %>" />
 
 <input type="text" name="announce" style="width: 50%;" value="<% $announce %>" />
 
@@ -20,10 +21,22 @@ unless ($session{'CurrentUser'}->HasRight( Object=> RT->System, Right => 'SuperU
 }
 
 my @results;
+my $title;
+
+my $object;
+if ($Queue) {
+    $object = RT::Queue->new( $session{'CurrentUser'} );
+    $object->Load( $Queue );
+    Abort( loc("Couldn't load queue [_1]", $Queue) )
+        unless $object->id;
+    $title = loc('Announce for Queue [_1]', $object->Name);
+} else {
+    $object = RT::System->new( $session{CurrentUser} );
+    $title = loc('Global Announce');
+}
 
 if ( $ARGS{'save'} and length $announce ) {
-    my $my_system = RT::System->new( $session{CurrentUser} );
-    my ($status, $msg) = $my_system->SetAttribute(
+    my ($status, $msg) = $object->SetAttribute(
         Name        => 'AnnounceSimple',
         Description => 'AnnounceSimple text',
         Content     => $announce,
@@ -32,15 +45,16 @@ if ( $ARGS{'save'} and length $announce ) {
     push @results, loc("Unable to update Announce text: [_1]", $msg)
         unless $status;
 } elsif ( $ARGS{'delete'} ) {
-    my ($status, $msg) = RT->System->DeleteAttribute('AnnounceSimple');
+    my ($status, $msg) = $object->DeleteAttribute('AnnounceSimple');
 
     push @results, loc("Unable to delete Announce text: [_1]", $msg)
         unless $status;
 }
 
-my $attr = RT->System->FirstAttribute('AnnounceSimple');
+my $attr = $object->FirstAttribute('AnnounceSimple');
 $announce = $attr ? $attr->Content : '';
 </%init>
 <%args>
 $announce => ''
+$Queue => 0
 </%args>
