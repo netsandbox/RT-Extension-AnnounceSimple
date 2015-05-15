@@ -1,4 +1,5 @@
 Changes
+html/Admin/Queues/AnnounceSimple.html
 html/Admin/Tools/AnnounceSimple.html
 html/Callbacks/AnnounceSimple/Elements/PageLayout/BeforeBody
 html/Callbacks/AnnounceSimple/Elements/Tabs/Privileged
