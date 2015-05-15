@@ -1,5 +1,5 @@
 ---
-abstract: 'Display simple announcement as a banner on RT pages.'
+abstract: 'Display simple announcements as a banner on RT pages.'
 author:
   - 'Christian Loos <cloos@netsandbox.de>'
 build_requires:

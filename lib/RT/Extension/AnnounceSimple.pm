@@ -8,13 +8,16 @@ our $VERSION = '0.01';
 
 =head1 NAME
 
-RT::Extension::AnnounceSimple - Display simple announcement as a banner on RT pages.
+RT::Extension::AnnounceSimple - Display simple announcements as a banner on RT pages.
 
 =head1 DESCRIPTION
 
-This plugin displays a simple announcement as a banner on RT pages.
+This plugin displays simple announcements as a banner on RT pages.
+The global announce is displayed on all pages.
+The queue announce is displayed only on the Ticket Display page.
 
-An RT Admin can set the announce text under Admin > Tools > Announce.
+An RT Admin can set the global announce text under Admin > Tools > Announce.
+An RT Queue Admin can set the queue announce text under Admin > Queues > Announce.
 
 If you want more than a simple text then have a look at
 L<RT::Extension::Announce|https://metacpan.org/pod/RT::Extension::Announce>.
