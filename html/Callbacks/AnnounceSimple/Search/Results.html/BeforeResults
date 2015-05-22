@@ -1,0 +1,19 @@
+% foreach my $id (sort keys %$queues) {
+% my $queue = RT::Queue->new($session{CurrentUser});
+% $queue->Load($id);
+% next unless $queue or $queue->id;
+<& /Elements/AnnounceSimple, Object => $queue &>
+% }
+<%init>
+return unless $ARGSRef->{Query};
+
+my $tree = RT::Interface::Web::QueryBuilder::Tree->new('AND');
+my @parse_results = $tree->ParseSQL(Query => $ARGSRef->{Query});
+return if @parse_results;
+
+my $queues = $tree->GetReferencedQueues;
+return unless %$queues;
+</%init>
+<%args>
+$ARGSRef
+</%args>

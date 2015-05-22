@@ -5,6 +5,7 @@ html/Admin/Tools/AnnounceSimple.html
 html/Callbacks/AnnounceSimple/Elements/PageLayout/BeforeBody
 html/Callbacks/AnnounceSimple/Elements/Tabs/Privileged
 html/Callbacks/AnnounceSimple/Elements/Tabs/PrivilegedQueue
+html/Callbacks/AnnounceSimple/Search/Results.html/BeforeResults
 html/Callbacks/AnnounceSimple/Ticket/Display.html/BeforeActionList
 html/Elements/AnnounceSimple
 inc/Module/Install.pm
