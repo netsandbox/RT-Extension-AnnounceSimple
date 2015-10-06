@@ -1,4 +1,7 @@
 Revision history for RT::Extension::AnnounceSimple
 
+1.00 2015-10-06
+ - implement queue announce
+
 0.01 2015-01-29
  - initial release
