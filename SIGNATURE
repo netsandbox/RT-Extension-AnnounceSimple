@@ -1,5 +1,5 @@
 This file contains message digests of all files listed in MANIFEST,
-signed via the Module::Signature module, version 0.73.
+signed via the Module::Signature module, version 0.79.
 
 To verify the content in this distribution, first make sure you have
 Module::Signature installed, then type:
@@ -14,10 +14,10 @@ not run its Makefile.PL or Build.PL.
 -----BEGIN PGP SIGNED MESSAGE-----
 Hash: SHA512
 
-SHA1 2752187852c1359026d611b6ccf9f912cc724d54 Changes
+SHA1 c5db51ee0f3d31c1927c88540b29fddcda9efedb Changes
 SHA1 9325776f7e4bc11989465738bfbf4236f44e8adb MANIFEST
-SHA1 ce0f79f062934d979e489b3a3f01897e0a503c2a META.yml
-SHA1 263879ced58aa8a7a35eaa0c4786f19b119f83b8 Makefile.PL
+SHA1 5a487354f08f43988f4327ba5af17c32a0d2eae0 META.yml
+SHA1 f8a9176a83239387688308e328d87c4d07e54d5d Makefile.PL
 SHA1 24fdb8e65c998ae5453c1a390b40857aa751bed8 README
 SHA1 653560b72606d49c2f2a514c949087aaba9d3888 html/Admin/Queues/AnnounceSimple.html
 SHA1 fbb0d3bd6ad6660781a72641b3e63fe126f9474e html/Admin/Tools/AnnounceSimple.html
@@ -39,20 +39,20 @@ SHA1 79f5b4199f622e8b05aac266b0c39f6a85bb303f inc/Module/Install/ReadmeFromPod.p
 SHA1 c830b819e61bda5eca077c6291293bba61b3b9f2 inc/Module/Install/Win32.pm
 SHA1 cb52b9d6f88d512d448a6f35ed0af0d1201a134b inc/Module/Install/WriteAll.pm
 SHA1 101dee5d09fc4f3cee4f866782c08409e85b7ec4 inc/YAML/Tiny.pm
-SHA1 2e53cc771d48deb1d342ee967104d4b955e7f985 lib/RT/Extension/AnnounceSimple.pm
+SHA1 b8327eb9da32000b3fe1abf481a0368f8b6cc33b lib/RT/Extension/AnnounceSimple.pm
 -----BEGIN PGP SIGNATURE-----
 
-iQIcBAEBCgAGBQJWFBwoAAoJEKq6dEXbZ7ZrnRIQAJ93e3rAQaOWJKEAH6g5QEp9
-2x0r7hE7vlQaHP4haLkfIyioRwdnbyK6z9w4hb7ldqAnsVEmIQyUItUqbX0DGk5I
-8wcAySZYjafEiJEuH6gUCNEdIxlrAgmoy6l3rRRKdR8vt1W9o1S6sE5swP3ojn3J
-4VaRt/2Uh76lXZv1eLqbu4wwGjitxUjU8EabpHpKNORz1XlmEZJNMu5zGz6EnuTG
-zL8uYyYdF4oiYc6k8cCEsW30GyCf/8Tb7/uObLRSKzLXlRkFBn5gmbQiEQ1hli1f
-U45nyXOjZUWRoOUVBclyY3zb6mLnC5f8djmvdYcMNiTZtgOEjYl8xGMljhvz7+TT
-rfgShyAJ/lFTF4mRdEv3V3OXFJfcN+Ax/5MHZnxzbk8cl/xlB4LpSt3F8+ZFeEPU
-zkf/bQ+4CJl4fABSBGSK+hDfKzGAPfEsHEhhekyvQJMKi/4js0E15THkWht2WbBI
-4owKHf+YJMSmXi4hZ9vQ6qS5+lm6Sry5de43s1VHIP8Vwsjf9TetOiY4tORA89HL
-O5Q8zFFNKbtoCyONMDLUj+9y5qlkrB3II7Xo5+jDBgjuUyHCSYugwI6XVdrOVS5q
-BY+izuqdD7f0N/wz7YsWSRmXMyW2YKIoX+eurvR2zRbFJUwKlVhwaPbWD7JE5H2n
-s/CSATk/dQIKrIOV600P
-=DYOB
+iQIcBAEBCgAGBQJW2DEZAAoJEKq6dEXbZ7ZrHecP/ivZNXruM8ceDf9jU+GOYijW
+yQ/VVqEoRQA+uyR9/lH/hH9qXeTNuUCqd37Q4Es0RyU38lqoUr+BUi1GJvGM47WC
+bMy5I7/spn6hL0rRRiSE3P4JWPai+k1MDA69s/g/L1gK07NQu+Q52l8Bh6Xg1ZxQ
+OQsTnn70wZsqpkuYHCQ+dvENNwfFxQnHWByTEZDWQ+yCe05zIRJEkntDnWyd20h4
+ROAhKpIg5nGYTRf8JJlGuTGBBmh0HPSI5EREDLdPbTQJey+QdbHWtF5GuLi1U1ki
+TF4vKaem0fQqvZc7D9sTgo43O1xVUH9NADStPzL2jgj9mCDaPN1/F2LoFLWH7JVg
+feXuvz2/d0phPKF1aFDhm8vNH6sKCaFnXve13kYS4pUCpv1deGiQyHCaV0fqEl5y
+gdQJDFrhmlXfkQj84fqej/jWFvSQrWqqGwASIrpbS0aIuzuTbNuttBmQwLgdKkAu
+9xerv3+BvlRW2Se9DjUzcWSnAftdTuM4oD+AYjk7NbR1tQHHEQM+KVe+S4BW9nzk
+Au/0BBZRTRwMPSBX8xfYXLVD3FAQje5I8m19cQGP4v82+U46Ans4mWfcHE82uLOk
+4Yw/QRZPe49L8tqywueNn5CCkHLIX+ZkcsfFFPww4FdYaExSaOJbd30yPIJ9BMKi
+Q6UEaIuo1uLATmy1UESd
+=pSZt
 -----END PGP SIGNATURE-----
