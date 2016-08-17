@@ -5,19 +5,7 @@ use warnings;
 
 
 package RT::Extension::AnnounceSimple::Test;
-
-our @ISA;
-BEGIN {
-    local $@;
-    eval { require RT::Test; 1 } or do {
-        require Test::More;
-        Test::More::BAIL_OUT(
-            "requires 3.8 to run tests. Error:\n$@\n"
-            ."You may need to set PERL5LIB=/path/to/rt/lib"
-        );
-    };
-    push @ISA, 'RT::Test';
-}
+use base 'RT::Test';
 
 sub import {
     my $class = shift;
