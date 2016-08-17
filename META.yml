@@ -18,6 +18,7 @@ no_index:
   directory:
     - html
     - inc
+    - xt
 requires:
   perl: 5.10.1
 resources:
