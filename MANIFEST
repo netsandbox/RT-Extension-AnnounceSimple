@@ -1,3 +1,4 @@
+.travis.yml
 Changes
 html/Admin/Queues/AnnounceSimple.html
 html/Admin/Tools/AnnounceSimple.html
