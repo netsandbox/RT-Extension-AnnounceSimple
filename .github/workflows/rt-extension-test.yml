@@ -17,7 +17,6 @@ jobs:
         rt:
           - '4.2'
           - '4.4'
-          - '5.0'
 
     container: netsandbox/request-tracker:${{ matrix.rt }}
 
