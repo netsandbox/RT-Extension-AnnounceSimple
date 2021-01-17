@@ -2,16 +2,16 @@
 <& /Elements/Tabs &>
 <& /Elements/ListActions, actions => \@results &>
 
-<form method="post" enctype="multipart/form-data" action="<% RT->Config->Get('WebPath') %>/Admin/Tools/AnnounceSimple.html">
+<form method="post" enctype="multipart/form-data" action="<% RT->Config->Get('WebPath') %>/Admin/Tools/AnnounceSimple.html" class="mx-auto max-width-lg">
 
+<div class="form-row">
 <input type="text" name="announce" style="width: 50%;" value="<% $announce %>" />
-
-<div>
-% if ($attr) {
-<input type="submit" name="delete" value="<&|/l&>Delete</&>" />
-% }
-<input type="submit" name="save" value="<&|/l&>Save</&>" />
 </div>
+
+<&/Elements/Submit, Label => loc('Save'), Name => 'save' &>
+% if ($attr) {
+<&/Elements/Submit, Label => loc('Delete'), Name => 'delete' &>
+% }
 
 </form>
 <%init>

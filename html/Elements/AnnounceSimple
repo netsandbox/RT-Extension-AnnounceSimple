@@ -1,11 +1,7 @@
 <div class="results announce">
 
-<&| /Widgets/TitleBox, title => $title, class => 'error', hideable => 0 &>
-
-<ul class="action-results" style="list-style-type: none;">
-<li><% $announce %></li>
-</ul>
-
+<&| /Widgets/TitleBox, title => $title, class => 'error-titlebox', hideable => 0 &>
+<% $announce %>
 </&>
 
 </div>
