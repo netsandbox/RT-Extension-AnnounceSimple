@@ -60,7 +60,7 @@ Christian Loos <cloos@netsandbox.de>
 
 =head1 LICENSE AND COPYRIGHT
 
-This software is Copyright (C) 2015, Christian Loos.
+This software is Copyright (C) 2015-2021, Christian Loos.
 
 This is free software, licensed under:
 
